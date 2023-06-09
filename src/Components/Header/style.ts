@@ -26,7 +26,10 @@ export const ContainerHeader = styled.header`
             }
             
         }
+
+
     }
+
 `;
 
 export const ContainerImg = styled.div`
@@ -41,6 +44,15 @@ export const ContainerImg = styled.div`
     h5 {
         font-size: 1rem;
         color: ${props => props.theme['pastel-brown']};
+    }
+
+    @media (max-width: 768px) {
+        img {
+            display: none;
+        }
+        h5 {
+            font-size: 0.8rem;
+        }
     }
 
 `;

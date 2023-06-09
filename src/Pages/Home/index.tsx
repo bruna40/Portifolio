@@ -1,5 +1,6 @@
-import { HandWaving } from "phosphor-react";
+import { HandWaving, FileArrowDown } from "phosphor-react";
 import { ContainerHome } from "./style";
+import curriculo from "../../Curriculo/BrunaCurriculo.pdf";
 
 export function Home() {
     return (
@@ -8,6 +9,9 @@ export function Home() {
             <p>Sou uma estudante de Ciência da Computação apaixonada por tecnologia </p>
             <p> e estou me aventurando no mundo do desenvolvimento web como uma</p>
             <p>desenvolvedora web full stack.</p>
+            <div>
+                <a href={curriculo} download={true}>Download cv <FileArrowDown  size={25}/></a>
+            </div>
         </ContainerHome>
     )
 }

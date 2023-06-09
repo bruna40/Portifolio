@@ -15,4 +15,12 @@ export const ContainerContato = styled.main`
     }
     
 
+    @media (max-width: 768px) {
+        margin-top: 8rem;
+        img {
+            width: 5rem;
+            margin: 1rem 1rem 1rem 1rem;
+        }
+    }
+
 `;
