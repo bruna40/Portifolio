@@ -21,22 +21,6 @@ export const ContainerHome = styled.main`
         color: ${props => props.theme['pastel-brown']};
 
     }
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        cursor: pointer;
-        background-color: ${props => props.theme['pastel-brown']};
-        padding: 1rem;
-        border-radius: 10px;
-        a {
-            text-decoration: none;
-            color: ${props => props.theme['white']};
-            font-size: 1rem;
-        }
-        
-    }
 
     @media (max-width: 768px) {
         margin-top: 8rem;
@@ -48,11 +32,30 @@ export const ContainerHome = styled.main`
         p {
             font-size: 1.1rem;
         }
-        div {
-            a {
-                font-size: 0.8rem;
-            }
-        }
     }
 
 `;
+
+export const LinkCv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: ${props => props.theme['pastel-brown']};
+    padding: 1rem;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: ${props => props.theme['white']};
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        a {
+            font-size: 0.8rem;
+        }
+    }
+
+`

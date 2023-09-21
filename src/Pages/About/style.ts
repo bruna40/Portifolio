@@ -102,8 +102,7 @@ export const ContainerSkill = styled.span`
     }
 
     div {
-        display: flex;
-        flex-direction: row;
+        
 
         p {
             background-color: ${props => props.theme['pastel-brown']};

@@ -12,5 +12,6 @@ export const skills = [
     'Git',
     'GitHub',
     'Express',
-    'Python',    
+    'Python',
+    'Next.js',
 ]

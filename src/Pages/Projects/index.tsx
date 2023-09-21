@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { ContainerGit, ContainerProjects } from "./style"
+import { Loading } from "../../Components/Loading"
 
 export function Projects() {
     const [projects, setProjects] = useState<any>([])
@@ -32,7 +33,7 @@ export function Projects() {
             <h1>Projetos</h1>
             <div>
                 {
-                    projects.map((project: any) => {
+                    projects.length > 0 ? projects.map((project: any) => {
                         return (
                             <ContainerGit key={project.id}>
                                 <h2>{project.name}</h2>
@@ -43,7 +44,7 @@ export function Projects() {
                             </ContainerGit>
                         )
                     }
-                    )
+                    ) : <Loading />
                 }
             </div>
         </ContainerProjects>
