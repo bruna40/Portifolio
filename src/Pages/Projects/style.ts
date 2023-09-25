@@ -21,32 +21,35 @@ export const ContainerProjects = styled.main`
 
 `;
 
-export const ContainerGit = styled.div`
+export const ContainerGit = styled.a`
+    align-items: center;
+    background-color: ${props => props.theme['pastel-brown']};
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 2rem;
+    padding: 2rem;
+
+    
+        
+    text-decoration: none;
+    color: ${props => props.theme['white']};
 
     h2 {
-        font-size: 2rem;
-
-        color: ${props => props.theme['pastel-brown']};
+        font-size: 1rem;
+        color: ${props => props.theme['white']};
     }
     span {
         font-size: 1rem;
-        color: ${props => props.theme['pastel-brown']};
+        color: ${props => props.theme['white']};
         margin-top: 1rem;
         padding: 0 1rem;
         text-align: center;
 
-
-        a {
-            font-size: 1rem;
-            text-decoration: none;
-            color: ${props => props.theme['coffe']};
-
+        p {
+            margin-top: 0.5rem;
         }
+
     }
 
     @media (max-width: 768px) {

@@ -35,11 +35,11 @@ export function Projects() {
                 {
                     projects.length > 0 ? projects.map((project: any) => {
                         return (
-                            <ContainerGit key={project.id}>
+                            <ContainerGit key={project.id} href={project.html_url}>
                                 <h2>{project.name}</h2>
                                 <span>
                                     <p>Linguagem utilizada: {project.language}</p>
-                                    <a href={project.html_url}>Ir a pagina</a>
+                                    <p>Ir a pagina</p>
                                 </span>
                             </ContainerGit>
                         )
