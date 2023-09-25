@@ -1,6 +1,6 @@
 import { HandWaving, FileArrowDown } from "phosphor-react";
 import { ContainerHome, LinkCv } from "./style";
-import curriculo from "../../Curriculo/BrunaCurriculo.pdf";
+import curriculo from "../../Curriculo/CurriculoBrunaDevFullStack.pdf";
 
 export function Home() {
     return (

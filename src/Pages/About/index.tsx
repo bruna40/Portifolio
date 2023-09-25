@@ -22,15 +22,17 @@ export function About() {
                 
                 <ContainerSkill>
                     <h2>MINHAS HABILIDADES</h2>
-                    {
-                        skills.map((skill, index) => {
-                            return(
-                                <div key={index}>
-                                    <p>{skill}</p>
-                                </div>
-                            )
-                        })
-                    }
+                    <div>
+                        {
+                            skills.map((skill, index) => {
+                                return(
+                                    <div key={index}>
+                                        <p>{skill}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </ContainerSkill>
             </div>
         </ContainerAbout>

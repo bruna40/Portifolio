@@ -2,29 +2,21 @@ import { styled } from "styled-components";
 
 
 export const ContainerAbout = styled.main`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 2rem;
-
-
     @media (max-width: 768px) {
         margin-top: 4rem;
         margin-left: 2rem;
         margin-right: 2rem;
 
     }
-
+    
 
 `;
 
 export const ContainerSpan = styled.span`
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     h1 {
         font-size: 3rem;
@@ -50,9 +42,6 @@ export const ContainerSpan = styled.span`
 `;
 
 export const ContainerText = styled.article`
-
-    display: flex;
-    flex-direction: column;
     align-items: start;
     
     padding: 2rem;
@@ -87,13 +76,7 @@ export const ContainerSkill = styled.span`
     display: flex;
     flex-direction: column;
     align-items: start;
-
-
-
     padding: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    
 
     h2 {
         font-size: 1.5rem;
@@ -103,14 +86,16 @@ export const ContainerSkill = styled.span`
 
     div {
         
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 0.5rem;
 
         p {
             background-color: ${props => props.theme['pastel-brown']};
-            padding: 0.5rem;
+            padding: 0.8rem 1rem;
             border-radius: 0.5rem;
-            margin-top: 0.5rem;
-            margin-right: 0.5rem;
-            font-size: 1rem;
+            align-text: center;
+            font-size: 1.4rem;
             color: ${props => props.theme['white']};
         }
     }
